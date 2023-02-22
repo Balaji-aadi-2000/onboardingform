@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar{
+    position: fixed;
+    width: 202px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    left: 2.8rem;
+    bottom: 1.5rem;
+}
+
+
+.search-bar{
+    display: flex;
+    position: fixed;
+    left: 16rem;
+    top: 1rem;
+    border: 1px solid #9C9FA4;
+    border-radius: 5px;
+}
+
+.searchBar{
+    position: relative;
+    bottom: 0rem;
+    width: 419px;
+    height: 32px;
+    right: 1rem;
+    border: none;
+}
+
+.divider{
+    position: fixed;
+    top: 7rem;
+    left: 15rem;
+    width: 1092px;
+    height: 0px;
+    border: 1px solid #9C9FA4;
+}
+
+
+.components-items{
+    display: flex;
+    position: absolute;
+    left: 9rem;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 5rem;
+    gap: 3rem;
+    cursor: pointer;
+    top: 5rem;
+}
+
+.components-items li{
+    position: relative;
+    /* transition: all 0.2s; */
+    color: #79767E;
+}
+
+.components-items li:hover{
+    color: #4A47E9;
+}
+
+.components-items li:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #4A47E9;
+    height: 3px;
+    width: 125%;
+    right: -11px;
+    top: 31.4px;
+}
